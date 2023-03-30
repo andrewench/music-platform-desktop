@@ -1,0 +1,18 @@
+{
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": false,
+  "singleQuote": true,
+  "bracketSameLine": true,
+  "arrowParens": "avoid",
+  "importOrder": [
+    "^webpack$",
+    "^(./webpack)",
+    "<THIRD_PARTY_MODULES>",
+    "^@/config",
+    "^@/constants"
+  ],
+  "importOrderSeparation": true,
+  "importOrderSortSpecifiers": true
+}

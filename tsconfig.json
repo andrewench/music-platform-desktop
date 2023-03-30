@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": "app",
+    "target": "ES6",
+    "allowJs": true,
+    "module": "commonjs",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "outDir": "build",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "paths": {
+      "@/config": ["config"],
+      "@/constants": ["constants"]
+    }
+  },
+  "include": ["app/**/*"],
+  "files": [
+    "app/global.d.ts"
+  ]
+}

@@ -1,0 +1,3 @@
+export const MIN_MAIN_INSTANCE_WIDTH = 1024
+export const MIN_MAIN_INSTANCE_HEIGHT = 640
+export const TITLE_BAR_HEIGHT = 38

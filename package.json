@@ -1,0 +1,61 @@
+{
+  "name": "music-platform-desktop",
+  "productName": "music-platform",
+  "version": "0.1.0",
+  "description": "The music platform for listening to music",
+  "main": ".webpack/main",
+  "private": true,
+  "author": "andrewench",
+  "license": "MIT",
+  "scripts": {
+    "preinstall": "husky install",
+    "dev": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint --ext .ts,.tsx app/*",
+    "lint:fix": "yarn lint --fix"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.1.0",
+    "@electron-forge/maker-deb": "^6.1.0",
+    "@electron-forge/maker-rpm": "^6.1.0",
+    "@electron-forge/maker-squirrel": "^6.1.0",
+    "@electron-forge/maker-zip": "^6.1.0",
+    "@electron-forge/plugin-webpack": "^6.1.0",
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
+    "@types/dotenv-webpack": "^7.0.3",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "@vercel/webpack-asset-relocator-loader": "1.7.3",
+    "css-loader": "^6.0.0",
+    "dotenv-webpack": "^8.0.1",
+    "electron": "^23.2.1",
+    "eslint": "^8.0.1",
+    "eslint-plugin-import": "^2.25.0",
+    "fork-ts-checker-webpack-plugin": "^7.2.13",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.0",
+    "node-loader": "^2.0.0",
+    "prettier": "^2.8.7",
+    "style-loader": "^3.0.0",
+    "ts-loader": "^9.2.2",
+    "ts-node": "^10.0.0",
+    "tsconfig-paths-webpack-plugin": "^4.0.1",
+    "typescript": "~4.5.4"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*{.ts,.tsx}": [
+      "yarn lint",
+      "git add"
+    ]
+  }
+}
