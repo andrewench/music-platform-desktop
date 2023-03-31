@@ -1,0 +1,81 @@
+:root {
+  --title-col: #626262;
+  --title-bar-height: 38px;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Regular.ttf') format('truetype'),
+  url('../fonts/Inter-Medium.ttf') format('truetype')
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+#app {
+  height: 100vh;
+  border-radius: 10px;
+  background-color: #f5f5f5;
+}
+
+.title-bar {
+  border-radius: 10px 10px 0 0;
+  border-bottom: 1px solid #f1f1f1;
+  width: 100vw;
+  overflow: hidden;
+  height: var(--title-bar-height);
+  background-color: #fff;
+}
+
+.title-bar__drag-area {
+  width: 100%;
+  height: inherit;
+  align-items: center;
+  -webkit-app-region: drag;
+}
+
+.title-bar__shortcut {
+  margin: 0 7px 0 10px;
+}
+
+.title-bar__title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--title-col);
+}
+
+.control-button {
+  border: none;
+  padding: 2px 10px 0 10px;
+  transition: background-color .3s;
+  background-color: transparent;
+}
+
+.control-button:hover {
+  cursor: pointer;
+  background-color: #00000007;
+}
+
+.control-button:hover > img {
+  filter: invert(58%) sepia(87%) saturate(4183%) hue-rotate(195deg)
+    brightness(101%) contrast(101%);
+}
+
+.control-button:focus {
+  outline: none;
+}
+
+.app__view {
+  display: block;
+  width: 100vw;
+  border: none;
+  height: calc(100vh - var(--title-bar-height));
+}
