@@ -1,4 +1,4 @@
-import type { ModuleOptions } from 'webpack';
+import type { ModuleOptions } from 'webpack'
 
 export const rules: Required<ModuleOptions>['rules'] = [
   {
@@ -25,4 +25,4 @@ export const rules: Required<ModuleOptions>['rules'] = [
       },
     },
   },
-];
+]

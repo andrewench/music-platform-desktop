@@ -1,38 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Music Platform</title>
-  <link rel="stylesheet" href="/main_window/assets/styles/styles.css">
-</head>
-<body>
-  <div id="app">
-    <div class="title-bar flex">
-      <div class="title-bar__drag-area flex">
-        <img class="title-bar__shortcut" src="/main_window/assets/icons/shortcut.svg" draggable="false" />
-        <h3 class="title-bar__title">Music Platform</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Platform</title>
+    <link rel="stylesheet" href="/main_window/assets/styles/styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <div class="title-bar flex">
+        <div class="title-bar__drag-area flex">
+          <img
+            class="title-bar__shortcut"
+            src="/main_window/assets/icons/shortcut.svg"
+            draggable="false" />
+          <h3 class="title-bar__title">Music Platform</h3>
+        </div>
+        <div class="title-bar--control-buttons flex">
+          <button class="control-button">
+            <img
+              src="/main_window/assets/icons/hamburger.svg"
+              draggable="false" />
+          </button>
+          <button class="control-button">
+            <img
+              src="/main_window/assets/icons/fullscreen.svg"
+              draggable="false" />
+          </button>
+          <button class="control-button">
+            <img
+              src="/main_window/assets/icons/minimize.svg"
+              draggable="false" />
+          </button>
+          <button class="control-button">
+            <img
+              src="/main_window/assets/icons/maximize.svg"
+              draggable="false" />
+          </button>
+          <button class="control-button">
+            <img src="/main_window/assets/icons/close.svg" draggable="false" />
+          </button>
+        </div>
       </div>
-      <div class="title-bar--control-buttons flex">
-        <button class="control-button">
-          <img src="/main_window/assets/icons/hamburger.svg" draggable="false" />
-        </button>
-        <button class="control-button">
-          <img src="/main_window/assets/icons/fullscreen.svg" draggable="false" />
-        </button>
-        <button class="control-button">
-          <img src="/main_window/assets/icons/minimize.svg" draggable="false" />
-        </button>
-        <button class="control-button">
-          <img src="/main_window/assets/icons/maximize.svg" draggable="false" />
-        </button>
-        <button class="control-button">
-          <img src="/main_window/assets/icons/close.svg" draggable="false" />
-        </button>
-      </div>
-    </div>
 
-    <iframe src="http://localhost:5173" sandbox="allow-scripts allow-forms" class="app__view"></iframe>
-  </div>
-</body>
+      <iframe
+        src="http://localhost:5173"
+        sandbox="allow-scripts allow-forms allow-same-origin"
+        class="app__view"></iframe>
+    </div>
+  </body>
 </html>

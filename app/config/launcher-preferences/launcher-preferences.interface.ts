@@ -1,11 +1,11 @@
 type TInstanceSize = Record<
-	'width' | 'minWidth' | 'height' | 'minHeight',
-	number
+  'width' | 'minWidth' | 'height' | 'minHeight',
+  number
 >
 
 export interface ILauncherPreferences {
-	instance: TInstanceSize
-	titleBar: {
-		height: number
-	}
+  instance: TInstanceSize
+  titleBar: {
+    height: number
+  }
 }

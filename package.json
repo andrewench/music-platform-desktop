@@ -8,13 +8,14 @@
   "author": "andrewench",
   "license": "MIT",
   "scripts": {
-    "preinstall": "husky install",
+    "husky": "husky install",
     "dev": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "publish": "electron-forge publish",
     "lint": "eslint app/**/*.ts --color",
-    "lint:fix": "yarn lint --fix"
+    "lint:fix": "yarn lint --fix",
+    "prettify": "prettier --write ."
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.1.0",

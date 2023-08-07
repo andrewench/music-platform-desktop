@@ -17,7 +17,5 @@
     }
   },
   "include": ["app/**/*"],
-  "files": [
-    "app/global.d.ts"
-  ]
+  "files": ["app/global.d.ts"]
 }
