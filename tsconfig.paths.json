@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "baseUrl": "app",
+    "paths": {
+      "@/config": ["config"],
+      "@/constants": ["constants"]
+    }
+  }
+}
